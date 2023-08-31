@@ -20,7 +20,8 @@
             search = document.querySelector(".search"),
             closeIcon = document.querySelector(".close-icon");
 
-            console.log(inputBox, search, closeIcon)
+        search.addEventListener("click", () => inputBox.classList.add("open"));
+        closeIcon.addEventListener("click", () => inputBox.classList.remove("open"));
     </script>
 </body>
 </html>
